@@ -15,6 +15,10 @@ body {
   color: #1F2937;
   background-color: #F7F8FA;
 }
+#imlogo{
+  width: 80px ;
+  border-radius: 20%;
+}
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', Arial, sans-serif;
