@@ -1,4 +1,4 @@
-```css
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -166,6 +166,49 @@ body {
   border-radius: 10px;
 }
 
+
+@media (max-width: 992px) {
+
+  .contact-container {
+    gap: 30px;
+    padding: 35px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 50px 16px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 25px 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .pied-haut {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
 
 
 

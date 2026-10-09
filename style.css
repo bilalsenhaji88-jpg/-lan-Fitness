@@ -196,6 +196,7 @@ button:focus-visible {
 .menu {
   display: flex;
   gap: 32px;
+  
 }
 
 .menu a {
@@ -556,3 +557,277 @@ button:focus-visible {
     width: 100px;
     height: 70px;
 }
+
+
+
+@media (max-width: 992px) {
+
+  .conteneur {
+    padding: 0 20px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .hero-texte h1 {
+    font-size: 40px;
+  }
+
+  .hero-image {
+    height: 350px;
+  }
+
+  .apropos-contenu {
+    gap: 40px;
+  }
+
+  .apropos-texte h2 {
+    font-size: 32px;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .conteneur {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  
+  .en-tete-contenu {
+    height: auto;
+    min-height: 70px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  
+  .hero {
+    padding: 48px 0 64px;
+  }
+
+  .hero-contenu {
+    flex-direction: column;
+  }
+
+  .hero-texte {
+    width: 100%;
+  }
+
+  .hero-texte h1 {
+    font-size: 34px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  
+  .boutons {
+    flex-direction: column;
+  }
+
+  .bouton {
+    width: 100%;
+  }
+
+  
+  .chiffres {
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .chiffre + .chiffre {
+    border-left: none;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 20px;
+  }
+
+  
+  .cartes {
+    flex-direction: column;
+  }
+
+  
+  .apropos-contenu {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .apropos-texte,
+  .apropos-image {
+    width: 100%;
+  }
+
+  .apropos-texte h2 {
+    font-size: 30px;
+  }
+
+  .apropos-image {
+    height: 280px;
+  }
+
+  
+  .valeurs {
+    flex-direction: column;
+  }
+
+  
+  .section-titre {
+    margin-bottom: 40px;
+  }
+
+  .section-titre h2 {
+    font-size: 28px;
+  }
+
+  
+  .pied-haut {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pied-bas {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+
+
+
+ 
+/* Cacher la case à cocher */
+#menu-toggle {
+  display: none;
+}
+
+/* Style du burger */
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  display: block;
+  width: 27px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #0F1B2D;
+  border-radius: 3px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+
+  .en-tete-contenu {
+    position: relative;
+    height: 70px;
+    min-height: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  #imlogo {
+    width: 55px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .navigation-principale {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E5E7EB;
+    box-shadow: 0 8px 15px rgba(15, 27, 45, 0.1);
+    z-index: 1000;
+  }
+
+  /* Afficher le menu quand la case est cochée */
+  #menu-toggle:checked ~ .navigation-principale {
+    display: block;
+  }
+
+  .navigation-principale .menu {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navigation-principale .menu a {
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  #menu-toggle:focus-visible + .burger {
+    outline: 3px solid #FF6B2C;
+    outline-offset: 2px;
+  }
+  
+  .en-tete-contenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+  }
+
+  #imlogo {
+    width: 55px;
+    height: auto;
+    display: block;
+  }
+
+  .logo::after {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 16px;
+  }
+}
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
 
  <link rel="stylesheet" href="style.css">
@@ -18,25 +18,36 @@
 
 <body>
 
-  <header class="en-tete">
-    <div class="conteneur en-tete-contenu">
-      
-      <a href="#accueil" class="logo">  <img id="imlogo" src="Logof.png" alt="Une photo "  id="fo">Élan Fitness</a>
-    
-      
 
-     
+<header class="en-tete">
+  <div class="conteneur en-tete-contenu">
 
-      <nav aria-label="Navigation principale">
-        <ul class="menu">
-          <li><a href="index.html" class="lien-actif">Accueil</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="programmes.html">Programmes</a></li>
-          <li><a href="contacte.html">Contactez-nous</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <a href="index.html" class="logo">
+      <img id="imlogo" src="Logof.png" alt="Logo Élan Fitness">
+      Élan Fitness
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="navigation-principale"
+         aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contacte.html">Contactez-nous</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
 
   <main>
 
@@ -44,7 +55,7 @@
       <div class="conteneur">
         
 
-        <div class="hero-contenu">
+        <div class="hero-contenu" >
           <div class="hero-texte">
             <p class="sur-titre">Salle de sport à Casablanca</p>
             <h1>Dépasse tes limites, à ton rythme</h1>

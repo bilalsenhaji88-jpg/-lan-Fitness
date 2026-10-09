@@ -6,23 +6,37 @@
   <title>programmes</title>
   <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./Logof.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="en-tete">
-    <div class="conteneur en-tete-contenu">
-      
-      <a href="#accueil" class="logo">  <img id="imlogo" src="Logof.png" alt="Une photo "  id="fo">Élan Fitness</a>
-      <nav aria-label="Navigation principale">
-        <ul class="menu">
-          <li><a href="index.html" class="lien-actif">Accueil</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="programmes.html">Programmes</a></li>
-          <li><a href="contacte.html">Contactez-nous</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="conteneur en-tete-contenu">
+
+    <a href="index.html" class="logo">
+      <img id="imlogo" src="Logof.png" alt="Logo Élan Fitness">
+      Élan Fitness
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="navigation-principale"
+         aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="contacte.html">Contactez-nous</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
 
 
   <section id="programmes" class="section">
